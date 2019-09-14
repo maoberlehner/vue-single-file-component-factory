@@ -4,7 +4,9 @@ module.exports = {
   css: {
     loaderOptions: {
       sass: {
-        importer: nodeSassMagicImporter(),
+        sassOptions: {
+          importer: nodeSassMagicImporter(),
+        },
       },
     },
   },
